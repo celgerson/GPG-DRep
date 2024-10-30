@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "@gersongomes"
+    },
+    "motivations": {
+      "@value": "I want to help build an innovative governance system that effectively manages the trade-off among security, scalability, and decentralization in blockchain technology.\n\n"
+    },
+    "objectives": {
+      "@value": "I am a former military officer who transitioned to become an independent journalist. \nI believe that the Cardano blockchain will play a crucial role in combating the centralization of global governance through social control.\n\"It’s not that they can’t see the solution. They can’t see the problem.\"\nGilbert K Chesterton"
+    },
+    "paymentAddress": {
+      "@value": "addr1q8rkpusm4e65w63qnnuljvrn64d2fy9elxmqe4x0tr6gpw7g2ry5af9puq0ru2eljp28kg6urqrcrzzlv44ytu0hagksgth4qj"
+    },
+    "qualifications": {
+      "@value": "Experienced Government, Media, Communications, Public Relations, and Public Information Specialist with 15 years in senior management, culminating as a Colonel in the Brazilian Army, possessing a global perspective on geopolitics."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/gersonpgomes"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X (former Twitter)"
+        },
+        "uri": {
+          "@value": "https://x.com/gersongomes"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X (former Twitter)"
+        },
+        "uri": {
+          "@value": "https://x.com/gersongomes"
+        }
+      }
+    ]
+  }
+}
